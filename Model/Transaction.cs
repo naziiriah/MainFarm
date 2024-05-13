@@ -1,11 +1,10 @@
-﻿using Poultry.Enums;
-using PoultryCore.Enums;
+﻿using MainFarm.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Transactions;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class Transaction : PoultryBase
+public class Transaction : MainFarmBase
 {
     public string? Reference { get; set; }
     public decimal Amount { get; set; }

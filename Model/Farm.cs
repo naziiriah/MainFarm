@@ -1,6 +1,6 @@
-﻿namespace PoultryCore.Model;
+﻿namespace MainFarm.Model;
 
-public class Farm : PoultryBase
+public class Farm : MainFarmBase
 {
     public string? Name { get; set; }
 

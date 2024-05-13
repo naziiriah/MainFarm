@@ -1,10 +1,10 @@
-﻿using PoultryCore.Enums;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel;
+using MainFarm.Enums;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class ManufacturedFeed :  PoultryBase
+public class ManufacturedFeed :  MainFarmBase
 {
     public string FeedBrand { get; set; } = "";
     

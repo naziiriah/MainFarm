@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
-using PoultryCore.Enums;
+using MainFarm.Enums;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class FarmSection : PoultryBase
+public class FarmSection : MainFarmBase
 {
     public string SectionName { get; set; } = "";
 

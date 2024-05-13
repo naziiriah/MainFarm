@@ -1,1 +1,1 @@
-﻿namespace Poultry.Models.Interface;
+﻿namespace MainFarm.Model.Interface;

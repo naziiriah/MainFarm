@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class EggRecord : PoultryBase
+public class EggRecord : MainFarmBase
 {
 
     [Required]

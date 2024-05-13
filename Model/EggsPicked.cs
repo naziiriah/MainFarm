@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class EggsPicked : PoultryBase
+public class EggsPicked : MainFarmBase
 {
 
     public int NumberOfCrates { get; set; }

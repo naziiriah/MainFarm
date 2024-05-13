@@ -1,8 +1,8 @@
-﻿using PoultryCore.Enums;
+﻿using MainFarm.Enums;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class Medicine : PoultryBase
+public class Medicine : MainFarmBase
 {
     public string Name { get; set; } = "";
 

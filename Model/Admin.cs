@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class Admin : PoultryBase
+public class Admin : MainFarmBase
 {
     public string? Username { get; set; }
     public string? ReferralCode { get; set; }

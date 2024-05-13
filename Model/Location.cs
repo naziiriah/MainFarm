@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PoultryCore.Model;
 
-public class Location : PoultryBase
+namespace MainFarm.Model;
+
+public class Location : MainFarmBase
 {
     public string? Title { get; set; }
     public string? Slug { get; set; }

@@ -1,9 +1,9 @@
-﻿using Poultry.Enums;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using MainFarm.Enums;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class Inventory : PoultryBase
+public class Inventory : MainFarmBase
 {
 
     public string Name { get; set; } = "Inventory";

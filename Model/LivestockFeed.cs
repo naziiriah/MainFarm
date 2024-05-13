@@ -1,6 +1,6 @@
-﻿namespace PoultryCore.Model;
+﻿namespace MainFarm.Model;
 
-public class LivestockFeed : PoultryBase
+public class LivestockFeed : MainFarmBase
 {
     public ICollection<MixedFeed> MixedFeeds { get; set; }
 

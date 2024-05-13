@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class OtherInventoryStuffs : PoultryBase
+public class OtherInventoryStuffs : MainFarmBase
 {
     public string Name { get; set; } = "";
 

@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class ItemFormat : PoultryBase
+public class ItemFormat : MainFarmBase
 {
     [DisplayName("Name of Inventory")]
     [Required]

@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Reflection;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class Contact : PoultryBase
+public class Contact : MainFarmBase
 {
     public string? FirstName { get; set; }
     public string? LastName { get; set; }

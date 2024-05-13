@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class PoultryBase
+public class MainFarmBase
 {
 
     [ValidateNever]

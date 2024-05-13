@@ -1,11 +1,11 @@
-﻿using PoultryCore.Enums;
+﻿using MainFarm.Enums;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PoultryCore.Model;
+namespace MainFarm.Model;
 
-public class MixedFeed : PoultryBase
+public class MixedFeed : MainFarmBase
 {
     public eFeedType FeedType { get; set; }
 
