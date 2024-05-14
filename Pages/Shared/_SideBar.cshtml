@@ -1,0 +1,104 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<nav class="page-sidebar" id="sidebar">
+    <div id="sidebar-collapse">
+        <ul class="side-menu metismenu">
+            <li class="@ViewData["IsDashboardActive"]">
+                <a asp-page="/Index">
+                    <i class="sidebar-item-icon ti-home"></i>
+                    <span class="nav-label">Dashboards</span>
+                </a>
+            </li>
+            <li class="heading">FEATURES</li>
+            <li class="@ViewData["IsCurrencyActive"]">
+                <a asp-page="/currencies/index" class="@ViewData["IsCurrencyActive"]">
+                    <i class="sidebar-item-icon ti-money"></i>
+                    <span class="nav-label">Currencies</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsMerchantActive"]">
+                <a asp-page="/merchants/index" class="@ViewData["IsMerchantActive"]">
+                    <i class="sidebar-item-icon ti-briefcase"></i>
+                    <span class="nav-label">Merchants</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsTransactionsActive"]">
+                <a asp-page="/transactions/index" class="@ViewData["IsTransactionsActive"]">
+                    <i class="sidebar-item-icon ti-bar-chart"></i>
+                    <span class="nav-label">Transactions</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsPayoutActive"]">
+                <a asp-page="/payouts/index" class="@ViewData["IsPayoutsActive"]">
+                    <i class="sidebar-item-icon ti-credit-card"></i>
+                    <span class="nav-label">Payouts</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsBankDetailsActive"]">
+                <a asp-page="/bankdetails/index" class="@ViewData["IsBankDetailsActive"]">
+                    <i class="sidebar-item-icon ti-credit-card"></i>
+                    <span class="nav-label">Bank Details</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsContactsActive"]">
+                <a asp-page="/contacts/index" class="@ViewData["IsContactsActive"]">
+                    <i class="sidebar-item-icon ti-book"></i>
+                    <span class="nav-label">Contacts</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsLocationsActive"]">
+                <a asp-page="/locations/index" class="@ViewData["IsLocationsActive"]">
+                    <i class="sidebar-item-icon ti-location-pin"></i>
+                    <span class="nav-label">Location</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsGenderActive"]">
+                <a asp-page="/genders/index" class="@ViewData["IsGenderActive"]">
+                    <i class="sidebar-item-icon ti-user"></i>
+                    <span class="nav-label">Genders</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsUsersActive"]">
+                <a asp-page="/users/index" class="@ViewData["IsUsersActive"]">
+                    <i class="sidebar-item-icon ti-user"></i>
+                    <span class="nav-label">Users</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsSystemUsersActive"]">
+                <a asp-page="/SystemUsers/index" class="@ViewData["IsSystemUsersActive"]">
+                    <i class="sidebar-item-icon ti-user"></i>
+                    <span class="nav-label">System Users</span>
+                </a>
+            </li>
+            <li class="@ViewData["IsDebugsActive"]">
+                <a href="javascript:;" aria-expanded="true">
+                    <i class="sidebar-item-icon ti-layout-tab-window"></i>
+                    <span class="nav-label">Debugs </span>
+                    <i class="fa fa-angle-left arrow"></i>
+                </a>
+                <ul class="nav-2-level collapse @ViewData["IsDebugsInActive"]">
+                    <li class="@ViewData["IsDashboardSimulatorActive"]">
+                        <a class="@ViewData["IsDashboardSimulatorActive"]" href="/Debugs/DashboardSimulator">Dashboard Simulator</a>
+                    </li>
+                    <li class="@ViewData["IsPayoutSimulatorActive"]">
+                        <a class="@ViewData["IsPayoutSimulatorActive"]" href="/Debugs/PayoutSimulator">Payout Simulator</a>
+                    </li>
+                    <li class="@ViewData["IsMerchantPayoutActive"]">
+                        <a class="@ViewData["IsMerchantPayoutActive"]" href="/Debugs/MerchantPayout">Merchant Payout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            @*<a href="javascript:;"><i class="ti-announcement"></i></a>
+            <a href="calendar.html"><i class="ti-calendar"></i></a>
+            <a href="javascript:;"><i class="ti-comments"></i></a>*@
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a href="/Auth/Logout"><i class="ti-power-off"></i></a>
+            }
+        </div>
+    </div>
+</nav>
